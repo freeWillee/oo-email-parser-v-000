@@ -6,14 +6,11 @@
 class EmailParser
   @@emails = []
 
-  attr_accessor :email_list
+  attr_accessor :email_list_space :email_list_csv
 
   def initialize(string)
+    @email_list_space = string.split
+    @email_list_csv = string.split(",")
   end
-
-  def parse
-    @@emails
-  end
-
 
 end
