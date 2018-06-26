@@ -7,7 +7,7 @@ require 'pry'
 class EmailParser
   @@emails = []
 
-  attr_accessor :email_list_space :email_list_csv
+  attr_accessor :email_list_space, :email_list_csv
 
   def initialize(string)
     @email_list_space = string.split
